@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id=demo></h1>
+
+<script>
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '231b82da79msh6db0e6b09ed59a3p19053ajsn0bdca558b743',
+		'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
+	}
+};
+
+fetch('https://open-weather13.p.rapidapi.com/city/Lagos', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.then(showPosition(response))
+	.catch(err => console.error(err));
+	
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+	
+
+
+
+</script>
+
+</body>
+</html>
