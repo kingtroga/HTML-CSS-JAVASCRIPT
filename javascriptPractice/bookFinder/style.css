@@ -1,3 +1,11 @@
+:root{
+    --color-primary-light: #f6e71d;
+    --color-primary-dark: #f5d10d;
+
+    --color-secondary-light: #181818;
+    --color-secondary-dark: #020202;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +20,7 @@
 
 body {
     font-family: Arial;
+    bac
 }
 
 
