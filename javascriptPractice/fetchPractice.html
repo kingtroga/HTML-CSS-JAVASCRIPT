@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+		<div id="result">
+			<ul id="booklist">
+
+			</ul>
+		</div>
+<script>
+
+let displayRes = function(response){
+	let container = document.getElementById('booklist');
+	
+	response.map((book) => {
+		let card = document.createElement('li')
+		let text = document.createTextNode(`${book.title}`)
+		
+		card.appendChild(text)
+		container.appendChild(card)
+	})
+}
+
+fetch('https://openlibrary.org/search.json?q=harry+potter')
+	.then(function(response){
+		return response.json()
+	})
+	.then(function(response){
+		displayRes(response.docs)
+	})
+	.catch(err => console.error(err));
+
+
+
+</script>
+    </body>
+</html>
