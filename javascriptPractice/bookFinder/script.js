@@ -15,11 +15,14 @@ function findAndDisplayBook(search) {
     document.getElementById("header").style.display= "none";
     document.getElementById("search_bar").style.display = "none";
     document.getElementById("search_button").style.display= "none";
-    let node = document.createElement("p");
+    document.getElementById("loading_screen").innerHTML = "Loading...";
+    
+    // Didn't work
+    /* let node = document.createElement("p");
     let textNode = document.createTextNode("Loading...");
 
     node.appendChild(textNode);
-    container.appendChild(node);
+    container.appendChild(node); */
     
     /* fetch('https://openlibrary.org/search.json?q=harry+potter')
         .then(function(response){
