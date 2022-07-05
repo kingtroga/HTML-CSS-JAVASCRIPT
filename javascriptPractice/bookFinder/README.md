@@ -17,5 +17,5 @@ book, and finnally the first ISBN of the book.</p>
      1. <s>a loading screen will be displayed </s>while the asynchronous parts of the Javascript runs its course. 
      2. The loading screen would show a Giant "Loading" text bluring in and out while changing colors in the middle of the screen.
   - When the asynchronous parts are done an entirely new page would be half created with JavaScript and half created with CSS.
-3. The Loading screen would be removed and the Search results would be displayed as "Search results" and  the " literal Search results" however I want to style it. 
+3. <s>The Loading screen would be removed</s> and the </s>Search results would be displayed</s> as "Search results" and  the " literal Search results" however I want to style it. 
 
