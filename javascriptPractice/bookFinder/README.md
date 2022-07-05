@@ -11,8 +11,8 @@ book, and finnally the first ISBN of the book.</p>
  - <s>When a user inputs the name of a book and clicks on sumbit a JavaScript function called `findAndDisplayBook` is called.</s>
 2. <s>The function that is located in the script.js file is invoked line by line. Starting by </s>
   - <s>Making the name of the page, the search box, and search button invisible.</s>
-  - Parse the text ( by text i mean string) given to something JavaScript understands 
-  - Concatenate the parsed string to the fetch request and make the ApI request
+  - <s>Parse the text ( by text i mean string) given to something JavaScript understands </s>
+  - <s>Concatenate the parsed string to the fetch request and make the ApI request</s>
   - <b>Note</b>: 
      1. <s>a loading screen will be displayed </s>while the asynchronous parts of the Javascript runs its course. 
      2. The loading screen would show a Giant "Loading" text bluring in and out while changing colors in the middle of the screen.

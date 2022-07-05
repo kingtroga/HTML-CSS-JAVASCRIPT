@@ -8,7 +8,9 @@
         <h1 id="header">BookFinder</h1>
         <input type="search" name="search" id="search_bar">
         <button type="submit" id="search_button" 
-        onclick="findAndDisplayBook()">Submit</button>
+        onclick="findAndDisplayBook(document.getElementById(
+            'search_bar').value)"
+            >Submit</button>
         <p id="loading_screen"></p> 
         <script src="script.js"></script>
     </body>
