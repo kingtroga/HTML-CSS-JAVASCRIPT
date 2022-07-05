@@ -1,19 +1,32 @@
 
 let displayRes = function(response){
+    document.getElementById("loading_screen").style.display = "none";
 	var mainContainer = document.getElementById('body');
+    let header = document.createElement('h1');
+        // document.createTextNode(`${book.title}`)
+	let headerText = document.createTextNode("Search Results");
+		
+	header.appendChild(headerText);
+	mainContainer.appendChild(header);
+    let bookList = document.createElement('ol');
     
 	
 	 response.map((book) => {
-		let minorContainer = document.createElement('div')
-		let text = document.createTextNode(`${book.title}`)
 		
-		card.appendChild(text)
-		container.appendChild(card)
+
+        
+        let bookListItem = document.createElement('li');
+        let bookTitle = document.createTextNode(`${book.title}`);
+
+        bookListItem.appendChild(bookTitle);
+        bookList.appendChild(bookListItem);
+        mainContainer.appendChild(bookList);
+
 	}) 
 }
 
 function findAndDisplayBook(search) {
-    debugger
+    
     document.getElementById("header").style.display= "none";
     document.getElementById("search_bar").style.display = "none";
     document.getElementById("search_button").style.display= "none";
