@@ -28,8 +28,9 @@ let displayRes = function(response){
 function findAndDisplayBook(search) {
     
     document.getElementById("header").style.display= "none";
-    document.getElementById("search_bar").style.display = "none";
-    document.getElementById("search_button").style.display= "none";
+    document.getElementById("input_container").style.display= "none";
+    /* document.getElementById("search_bar").style.display = "none";
+    document.getElementById("search_button").style.display= "none"; */
     document.getElementById("loading_screen").innerHTML = "Loading...";
 
     let query = search.toLowerCase().replace(/\s+/g,"+");
