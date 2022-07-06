@@ -17,7 +17,7 @@
 }
 
  html {
-    font-size: 62.5%; /* 1rem = 10px */'
+    font-size: 62.5%; /* 1rem = 10px */
     
 }
 
@@ -50,11 +50,8 @@ body {
 
 #search_bar {
     margin-bottom: 4rem;
-    padding: .8rem;
-    padding-left: 25rem;
-    padding-right: 25rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 20px;
+    width: 500px;
     
     color: var(--color-grey-light-4);
     background-color: #181818;
@@ -71,10 +68,11 @@ body {
     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.8rem;
     margin: 0;
-    position: absolute;
-    left: 25%;
-    top: 20%;
-    transform: translate(-50, -50);
+    /* position: absolute; */
+    /* left: 25%;
+    top: 20%; */
+    text-align: center;
+    /* transform: translate(-50, -50); */
 }
 #search_bar:active,
 #search_bar:focus
@@ -156,20 +154,20 @@ h1 {
     text-shadow: .1rem 0rem rgba(255, 255, 255, 0.8);
 }
 
-ul {
+/* ul {
     
     
-}
+} */
 
- li {
-    margin-left: 5rem;
-    font-size: 30px;
-    list-style: ;
-    padding: .8rem;
-    color: var(--color-grey-dark-1);
-    text-shadow: .1rem 0rem rgba(254, 255, 255, .8); 
-    
-    /* padding-left: .8rem;  */
+li {
+margin-left: 5rem;
+font-size: 30px;
+/* list-style: ; */
+padding: .8rem;
+color: var(--color-grey-dark-1);
+text-shadow: .1rem 0rem rgba(254, 255, 255, .8); 
+
+/* padding-left: .8rem;  */
 }
 
 h3 {
