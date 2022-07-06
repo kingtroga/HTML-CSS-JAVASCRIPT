@@ -8,19 +8,52 @@ let displayRes = function(response){
 		
 	header.appendChild(headerText);
 	mainContainer.appendChild(header);
-    let bookList = document.createElement('ol');
+    
     
 	
 	 response.map((book) => {
-		
-
+		let bookList = document.createElement('div');
         console.log(book.title);
-        let bookListItem = document.createElement('li');
+        /* let container = document.createElement(''); */
+        let spanTag1 = document.createElement('span');
+        let spanTag2 = document.createElement('span');
+        let headerTag = document.createElement('h3');
         let bookTitle = document.createTextNode(`${book.title}`);
 
-        bookListItem.appendChild(bookTitle);
-        bookList.appendChild(bookListItem);
+        if (book.author_name == undefined) {
+            var bookAuthor = document.createTextNode("Unknown");
+        } else if (book.author_name.length > 1) {
+            var bookAuthor = document.createTextNode(`${book.author_name.join(", ")}`);
+        } else  if (book.author_name) {
+            var bookAuthor = document.createTextNode(`${book.author_name}`);
+        }
+
+        if (book.isbn == undefined){
+            var bookISBN = document.createTextNode("Unknown");
+        } else if (book.isbn.length > 1) {
+            var bookISBN = document.createTextNode(`${book.isbn[0]}`);
+        } else {
+            var bookISBN = document.createTextNode(`${book.isbn}`);
+        }
+        
+
+        headerTag.appendChild(bookTitle);
+        bookList.appendChild(headerTag);
         mainContainer.appendChild(bookList);
+        
+        spanTag1.appendChild(bookAuthor);
+        bookList.appendChild(spanTag1);
+        mainContainer.appendChild(bookList);
+
+        spanTag2.appendChild(bookISBN);
+        bookList.appendChild(spanTag2);
+        mainContainer.appendChild(bookList);
+
+        
+        /* bookList.appendChild(spanTag); */
+
+        /* container.appendChild(bookList); */
+        
 
 	}) 
 }
