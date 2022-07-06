@@ -18,22 +18,22 @@ let displayRes = function(response){
         let spanTag1 = document.createElement('span');
         let spanTag2 = document.createElement('span');
         let headerTag = document.createElement('h3');
-        let bookTitle = document.createTextNode(`${book.title}`);
+        let bookTitle = document.createTextNode(`TITLE: ${book.title}`);
 
-        if (book.author_name == undefined) {
-            var bookAuthor = document.createTextNode("Unknown");
+        if (!book.author_name) {
+            var bookAuthor = document.createTextNode("Unknown Author");
         } else if (book.author_name.length > 1) {
-            var bookAuthor = document.createTextNode(`${book.author_name.join(", ")}`);
+            var bookAuthor = document.createTextNode(`AUTHOR: ${book.author_name.join(", ")}`);
         } else  if (book.author_name) {
-            var bookAuthor = document.createTextNode(`${book.author_name}`);
+            var bookAuthor = document.createTextNode(`AUTHOR: ${book.author_name}`);
         }
 
-        if (book.isbn == undefined){
-            var bookISBN = document.createTextNode("Unknown");
+        if (!book.isbn){
+            var bookISBN = document.createTextNode("Unknown ISBN");
         } else if (book.isbn.length > 1) {
-            var bookISBN = document.createTextNode(`${book.isbn[0]}`);
+            var bookISBN = document.createTextNode(`ISBN: ${book.isbn[0]}`);
         } else {
-            var bookISBN = document.createTextNode(`${book.isbn}`);
+            var bookISBN = document.createTextNode(`ISBN: ${book.isbn}`);
         }
         
 
