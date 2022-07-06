@@ -13,7 +13,7 @@ let displayRes = function(response){
 	
 	 response.map((book) => {
 		let bookList = document.createElement('div');
-        console.log(book.title);
+        bookList.className = "bookCards"
         /* let container = document.createElement(''); */
         let spanTag1 = document.createElement('span');
         let spanTag2 = document.createElement('span');
