@@ -14,7 +14,7 @@ let displayRes = function(response){
 	 response.map((book) => {
 		
 
-        
+        console.log(book.title);
         let bookListItem = document.createElement('li');
         let bookTitle = document.createTextNode(`${book.title}`);
 

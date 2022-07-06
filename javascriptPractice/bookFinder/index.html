@@ -2,15 +2,18 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Roboto:ital,wght@0,700;1,500;1,900&display=swap" rel="stylesheet">
         <title>BookFinder</title>
     </head>
     <body id="body">
         <h1 id="header">BookFinder</h1>
         <div class="input_container" id="input_container">
-            <input type="search" name="search" id="search_bar">
+            <input type="search" name="search" id="search_bar" placeholder="Search for any Book by Name ">
             <button type="submit" id="search_button" 
         onclick="findAndDisplayBook(document.getElementById(
-            'search_bar').value)"
+            'search_bar').value)" 
             >Submit</button>
         </div>
         
