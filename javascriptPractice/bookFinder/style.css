@@ -25,7 +25,8 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-image: url(img/books.jpg);
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -113,18 +114,61 @@ body {
 
 }
 
-p {
+#loading_screen {
+    text-align: center;
+    font-size: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: block;
+    color: var(--color-grey-light-1);
     font-size: 100px;
-}  
+    margin: 25rem auto;
+    text-shadow: 1rem .5rem rgba(0, 0, 0, .8);
+    animation: loading 8s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes loading {
+    25% {
+        color: var(--color-grey-dark-1);
+        text-shadow: 1rem .5rem rgba(0, 0, 0, .8);
+    }
+
+    50% {
+        color: var(--color-grey-light-1);
+        text-shadow: 1rem .5rem rgba(0, 0, 0, .8);
+    }
+
+    75% {
+        color: var(--color-grey-dark-1);
+        text-shadow: 1rem .5rem rgba(0, 0, 0, .8);
+    }
+
+    100% {
+        color: var(--color-grey-light-1);
+        text-shadow: 1rem .5rem rgba(0, 0, 0, .8);
+    }
+}
 
 h1 {
     margin-left: .8rem;
     padding-left: .8rem; 
+    margin-top: .8rem;
+    font-size: 40px;
+    color: var(--color-grey-dark-1);
+    text-shadow: .5rem 0rem rgba(255, 255, 255, 0.8);
 }
 
-li {
-    margin-left: 2rem;
+ul {
+    
+    
+}
+
+ li {
+    margin-left: 5rem;
+    font-size: 30px;
+    list-style: ;
+    padding: .8rem;
+    color: var(--color-grey-dark-1);
+    text-shadow: .1rem 0rem rgba(254, 255, 255, .8); 
     
     /* padding-left: .8rem;  */
 }
