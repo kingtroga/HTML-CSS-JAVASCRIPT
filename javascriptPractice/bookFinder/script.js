@@ -80,3 +80,16 @@ function findAndDisplayBook(search) {
         })
         .catch(err => console.error(err));
 } 
+
+
+
+let add = (function() {
+    let counter = 0;
+    return setInterval(function() {
+            counter +=1; 
+            console.log(counter); 
+        },1000);
+    }
+)();
+
+// console.log(add());
