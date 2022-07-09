@@ -1,5 +1,6 @@
-var a;
-
-if (a) {
-    console.log("Something is there.")
+function greet(name) {
+    console.log(name);
+    console.log('Hello ' + name);
 }
+
+greet();
