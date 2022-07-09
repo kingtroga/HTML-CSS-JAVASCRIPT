@@ -5,6 +5,7 @@ query would be made to the back end api (open library)
 and it would return the name of the book, the name of the 
 author(s) of the book, the first year of publishing of the 
 book, and finnally the first ISBN of the book.</p>
+<img src="..\img\bookFInder1.png">
 
 ## Implementation
 1. <s>A The index.html file contains the name of the page and a search box with a search button. </s>
