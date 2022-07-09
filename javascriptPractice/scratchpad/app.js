@@ -1,11 +1,8 @@
-console.log(3 < 2 < 1);
+var a = 0;
+var b = false;
 
-// due to associativity
-
-console.log(false < 1);
-
-// due to coercion ()use Number(false))
-
-console.log(0 < 1)
-
-// hence the boolean above becomes true
+if (a == b) {
+    console.log ('They are equal!');
+} else {
+    console.log ('Nope, not equal.');
+}
