@@ -1,5 +1,5 @@
+#  Book finder
 <img src="..\img\bookFInder1.png">
-# Book finder
 <p>Book finder is a web application in which a user can
 input the name of the book he/she is looking for and a
 query would be made to the back end api (open library)
