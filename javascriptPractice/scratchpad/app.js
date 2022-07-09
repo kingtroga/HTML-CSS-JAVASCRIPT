@@ -1,8 +1,5 @@
-var a = 0;
-var b = false;
+var a;
 
-if (a === b) {
-    console.log ('They are equal!');
-} else {
-    console.log ('Nope, not equal.');
+if (a) {
+    console.log("Something is there.")
 }
