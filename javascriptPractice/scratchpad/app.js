@@ -1,11 +1,8 @@
-function b() {
-    console.log(myVar);
+//console.log(c)
+
+function add() {
+    let c = true;
+    console.log(c);
 }
 
-function a() {
-    var myVar = 2;
-    b();
-}
-
-var myVar = 1;
-a();
+add();
