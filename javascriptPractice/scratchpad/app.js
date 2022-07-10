@@ -1,7 +1,8 @@
-function greet(name) {
-    name = name || '<Your name here>';
-    console.log('Hello ' + name);
-}
+var person = new Object()
+person["firstname"] = "Tony";
+person['lastname'] = 'Alicea';
 
-greet(Tony);
-greet();
+var firstNameProperty = "firstname";
+
+console.log(person);
+console.log(person[firstNameProperty])
