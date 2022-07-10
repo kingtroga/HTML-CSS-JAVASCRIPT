@@ -1,20 +1,4 @@
-var Tony = { 
-    firstname: 'Tony', 
-    lastname: "Alicea",
-    address: {
-        street: '111 Main St.',
-        city: 'New York',
-        state: 'NY'
-    }
-};
+var greet = 'Hello!';
+var greet = 'Hola!';
 
-function greet(person) {
-    console.log('Hi ' + person.firstname);
-}
-
-greet(Tony);
-
-greet({
-    firstname: 'Mary', 
-    lastname: 'Doe'
-});
+console.log(greet);
