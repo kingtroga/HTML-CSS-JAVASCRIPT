@@ -8,7 +8,8 @@ console.log(greet);
 var english = {};
 var spanish = {};
 
-english.greet = 'Hello!';
+// the code below won't walk because you can set an undefined to a value 
+english.greetings.greet = 'Hello!';
 spanish.greet = 'Hola!';
 
 console.log(english.greet);
