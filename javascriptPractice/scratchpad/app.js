@@ -1,15 +1,11 @@
-var greet = 'Hello!';
-var greet = 'Hola!';
+var objectLiteral = {
+    firstname: 'Mary',
+    isAProgrammer: true
+};
 
-console.log(greet);
+console.log(JSON.stringify(objectLiteral));
 
-// How to fake Namespaces in JavaScript
-
-var english = {};
-var spanish = {};
-
-// the code below won't walk because you can set an undefined to a value 
-english.greetings.greet = 'Hello!';
-spanish.greet = 'Hola!';
-
-console.log(english.greet);
+/* {
+    "firstname": "Mary",
+    "isAProgrammer": true
+} */
