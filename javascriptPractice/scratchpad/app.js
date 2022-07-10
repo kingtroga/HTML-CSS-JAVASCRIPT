@@ -5,11 +5,16 @@ function greet(){
     console.log('hi');
 }
 
-anonymousGreet();
-// what would be the value of the code above via hoisting?
 
-// function statement.
+// function expression
 var anonymousGreet = function() {
     console.log('hi');
 }
 
+anonymousGreet();
+
+function log(a) {
+    console.log(a);
+}
+
+log(3);
