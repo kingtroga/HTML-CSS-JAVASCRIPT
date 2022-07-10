@@ -3,3 +3,4 @@ function greet(){
 }
 
 greet.language = 'english';
+console.log(greet.language);
