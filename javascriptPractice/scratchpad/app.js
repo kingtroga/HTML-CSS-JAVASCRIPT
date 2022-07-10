@@ -6,3 +6,6 @@ var firstNameProperty = "firstname";
 
 console.log(person);
 console.log(person[firstNameProperty])
+
+// member access operator.
+console.log(person.firstname)
