@@ -1,10 +1,20 @@
-var person = { firstname: 'Tony', lastname: "Alicea"};
-console.log(person);
+var Tony = { 
+    firstname: 'Tony', 
+    lastname: "Alicea",
+    address: {
+        street: '111 Main St.',
+        city: 'New York',
+        state: 'NY'
+    }
+};
 
-// above is the same as 
-person = new Object();
-person.firstname = "Tony";
-person.lastname = "Alicea";
-console.log(person);
+function greet(person) {
+    console.log('Hi ' + person.firstname);
+}
 
-// although the first way of writing was faster.
+greet(Tony);
+
+greet({
+    firstname: 'Mary', 
+    lastname: 'Doe'
+});
