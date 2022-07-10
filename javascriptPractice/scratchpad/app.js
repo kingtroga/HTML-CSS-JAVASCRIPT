@@ -1,4 +1,4 @@
-greet();
+/* greet();
 
 // function statement.
 function greet(){
@@ -11,10 +11,12 @@ var anonymousGreet = function() {
     console.log('hi');
 }
 
-anonymousGreet();
+anonymousGreet(); */
 
 function log(a) {
     console.log(a);
 }
 
-log(3);
+log(function() {
+    console.log('hi');
+});
