@@ -14,3 +14,16 @@ var c = { greeting: 'hi'};
 var d;
 
 d = c;
+c.greeting = 'hello';//mutate
+
+console.log(d);
+console.log(c);
+
+// by reference (even as parameters)
+function changeGreeting(obj) {
+    obj.greeting = 'Hola'; //mutate
+}
+
+changeGreeting(d);
+console.log(d);
+console.log(c);
