@@ -17,16 +17,16 @@ var c = {
     log: function() {
         var self = this; // since this are objects. Self is going to be 
                         // point to the same location in memory as this.
-        this.name = 'Updated c object';
+        self.name = 'Updated c object';
         console.log(this);
 
 
         // this here points to the global object...
         var setname = function(newname) {
-            this.name = newname;
+            self.name = newname;
         };
         setname('Updated again! The c object');
-        console.log(this);
+        console.log(self);
     }
 }
 
