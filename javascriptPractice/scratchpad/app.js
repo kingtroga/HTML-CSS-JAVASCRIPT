@@ -6,7 +6,7 @@ var arr = [
                 address: '111 Main st.'
             },
             function(name) {
-                var greeting = 'Hello';
+                var greeting = 'Hello ';
                 console.log(greeting + name);
             }, 
             'hello'
