@@ -14,8 +14,16 @@ a();
 console.log(newvariable);
 
 var c = {
-    name: 'The c object',
     log: function() {
+        this.name = 'Updated c object';
+        console.log(this);
+
+
+        // this here points to the global object...
+        var setname = function(newname) {
+            this.name = newname;
+        };
+        setname('Updated again! The c object');
         console.log(this);
     }
 }
