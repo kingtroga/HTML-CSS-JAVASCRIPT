@@ -1,21 +1,24 @@
-function greet(firstname, lastname, language, ...other ) {
+function greet(firstname, lastname, language) {
+    // what if I didn't always want to pass the language.
 
-    language = language || 'en'; //defualt hack javascripts)
+    language = language || 'en';
 
-    if (arguments.length === 0)  {
-        console.log('Missing parameters!');
-        console.log('-------------------');
-        return;
+    if (language ==='en') {
+        console.log('Hello ' + firstname +  " " + lastname);
     }
 
-    console.log(firstname);
-    console.log(lastname);
-    console.log(language);
-    console.log('arg 0: '+ arguments[0]);
-    console.log('-------------');
+    if (language ==='es') {
+        console.log('Hola ' + firstname +  " " + lastname);
+    }
 }
 
-greet(); 
-greet('John');
-greet('John', 'Doe');
+// open approach to function overloading
+function greetEnglish(firstname, lastname) {
+    greet(firstname, lastname, 'en');
+}
+
+function greetSpanish(firstname, lastname) {
+    greet(firstname, lastname, 'es');
+}
+greet('John', 'Doe', 'en');
 greet('John', 'Doe', 'es');
