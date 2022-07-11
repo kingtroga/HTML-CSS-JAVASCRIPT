@@ -15,3 +15,8 @@ var arr = [
 // JavaScript is like python on steriods.
 
 
+console.log(arr);
+
+// Holy fuck
+arr[3](arr[2].name)
+
