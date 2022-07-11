@@ -1,4 +1,7 @@
-function greet(firstname, lastname, language) {
+function greet(firstname, lastname, language ) {
+
+    language = language || 'en'; //defualt hack javascripts)
+
     console.log(firstname);
     console.log(lastname);
     console.log(language);
