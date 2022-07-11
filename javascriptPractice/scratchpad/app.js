@@ -15,6 +15,8 @@ console.log(newvariable);
 
 var c = {
     log: function() {
+        var self = this; // since this are objects. Self is going to be 
+                        // point to the same location in memory as this.
         this.name = 'Updated c object';
         console.log(this);
 
