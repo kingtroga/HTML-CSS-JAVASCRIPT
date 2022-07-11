@@ -1,5 +1,17 @@
-// declaration one
-var arr = new Array();
+var arr = [
+            1, 
+            true, 
+            {
+                name: 'Tony',
+                address: '111 Main st.'
+            },
+            function(name) {
+                var greeting = 'Hello';
+                console.log(greeting + name);
+            }, 
+            'hello'
+        ];
+// What the fuck i'm I sure that Python can do this?
+// JavaScript is like python on steriods.
 
-// declaration two
-var arr = [];
+
