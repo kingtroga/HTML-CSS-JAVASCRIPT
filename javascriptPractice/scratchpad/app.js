@@ -4,4 +4,5 @@ function greet(firstname, lastname, language) {
     console.log(language);
 }
 
-greet();
+greet(); // in any other language this will output an error but in this code
+// it doesnt Why? Hoisting
