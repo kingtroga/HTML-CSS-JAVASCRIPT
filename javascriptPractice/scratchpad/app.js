@@ -13,3 +13,11 @@ var b = function() {
 a();
 console.log(newvariable);
 
+var c = {
+    name: 'The c object',
+    log: function() {
+        console.log(this);
+    }
+}
+
+c.log();
