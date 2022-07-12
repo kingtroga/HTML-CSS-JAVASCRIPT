@@ -1,3 +1,6 @@
+
+var greeting = 'Hola';
+
 // IIFE
 (function(name) {
 
