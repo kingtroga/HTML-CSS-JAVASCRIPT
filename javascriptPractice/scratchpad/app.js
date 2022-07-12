@@ -61,3 +61,6 @@ var multiplyByTwo = multiply.bind(this, 2); // giving it parameters gives
 // the first parameter will always be a 2.
 // so whatevery you pass will be the second parameter
 console.log(multiplyByTwo(5));
+
+// FUNCTION CURRYING: CREATING A Copy of a function but with some preset parameters.
+// useful in maths.
