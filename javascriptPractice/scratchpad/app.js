@@ -3,3 +3,5 @@ function greet(whattosay) {
         console.log(whattosay + ' ' + name);
     };
 };
+
+greet('Hi')('Tony');
