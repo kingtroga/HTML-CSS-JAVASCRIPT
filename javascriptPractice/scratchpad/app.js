@@ -39,3 +39,12 @@ var firstname = 'John';
 
 }(firstname)); // This is a classic example of an IIFE.
 
+// Note an IIFE can be invoked but inside and outside the parenthesis 
+// It honestly doesn't really matter.
+
+(function(name) {
+    var greeting = 'Oustide IIFE: Hello';
+    console.log(greeting + ' ' + name);
+
+})(firstname);
+
