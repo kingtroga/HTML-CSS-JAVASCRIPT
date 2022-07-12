@@ -29,3 +29,12 @@ logName.call(person) // Kind works like bind but unlike it.
 // what the 'this' variable would be.
 
 logName.apply(person, ['en', 'es']); // kinda like call but it wants an array of parameters.
+
+
+(function(lang1, lang2) {
+
+    console.log('Logged: ' + this.getFullName());
+    console.log("Argurments: " + lang1 + " " + lang2);
+    console.log("-----------");
+
+}).apply(person, ['es', 'en']);
