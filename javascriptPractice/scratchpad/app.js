@@ -1,9 +1,15 @@
-function greet(whattosay) {
-    //goes outside the scope chain to find whattosay
-    return function(name) {
-        console.log(whattosay + ' ' + name);
-    };
-};
+function makeGreeting(language) {
 
-var sayHi = greet('Hi');
-sayHi(Tony);
+    return function(firstname, lastname) {
+        if (language === 'en') {
+            console.log('Hello' + firstname + ' ' + lastname);
+        }
+
+        if (language === 'es') {
+            console.log('Hola' + firstname + ' ' + lastname);
+        }
+    }
+}
+
+var greetEnglish = makeGreeting('en');
+var greetSpanish = makeGreeting('es');
