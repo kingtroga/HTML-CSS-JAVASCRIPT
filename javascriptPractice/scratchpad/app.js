@@ -1,9 +1,21 @@
-function getPerson() {
-    return // OUTPUT: undefined because of javascript automatical semicolon
-           // Insertion.
-    {
-        firstname: 'Tony'
-    }
-}
+var  
+     // firstname of the person
+     firstname,
 
-console.log(getPerson());
+     // lastname of the person
+     lastname,
+
+     // the language
+     // can be 'en" or 'es'
+     language;
+
+var person = {
+      // the first name
+      firstname: 'John',
+
+      // the last name
+      // (always required)
+      lastname: 'Doe'
+};
+
+console.log(person);
