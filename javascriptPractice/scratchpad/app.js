@@ -5,11 +5,10 @@ function greet(name) {
 greet('John');
 
 
-// using a function expression.
+// using an IIFE 
 var greetFunc = function(name) {
     console.log('Hello ' + name);
-};
+}(); // output will be the function value.
 
 
-// OUTPUT will be  a better function  value
-console.log(greeting('John'));
+
