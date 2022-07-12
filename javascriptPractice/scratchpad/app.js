@@ -11,6 +11,8 @@ var person = {
 var logName = function(lang1, lang2) {
 
     console.log('Logged: ' + this.getFullName());
+    console.log("Argurments: " + lang1 + " " + lang2);
+    console.log("-----------");
 
 }
 
@@ -18,5 +20,6 @@ var logName = function(lang1, lang2) {
 // function so that whenever it run.  The JavaScript engine decides that 
 // the this variable was whatever was passed to the this variable.
 var logPersonName = logName.bind(person);
+logPersonName('en');
 
-logPersonName();
+
