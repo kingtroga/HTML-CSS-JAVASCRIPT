@@ -1,5 +1,6 @@
 function getPerson() {
-    return
+    return // OUTPUT: undefined because of javascript automatical semicolon
+           // Insertion.
     {
         firstname: 'Tony'
     }
