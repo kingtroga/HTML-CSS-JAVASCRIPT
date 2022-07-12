@@ -18,7 +18,6 @@ console.log(arr1);
 
 var arr2 = mapForEach(arr1, function(item){
     return item*2;
-}
-)
+});
 
 console.log(arr2);
