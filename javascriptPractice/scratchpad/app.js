@@ -1,12 +1,11 @@
-// Function Statement
+// Function Statement.
 function greet(name) {
     console.log('Hello ' + name);
 };
-greet();
+greet('John');
 
 
-// Funtion expression
+// using an Immediately Invoked Function Expression.
 var greetFunc = function(name) {
     console.log('Hello ' + name);
-};
-greetFunc();
+}();
