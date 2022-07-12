@@ -1,10 +1,5 @@
-
-var greeting = 'Hola';
-
-// IIFE
-(function(global, name) {
-
-    var global.greeting = 'Hello';
-    console.log(greeting + ' ' + name);
-
-}(window, 'John')); // IIFE
+function greet(whattosay) {
+    return function(name) {
+        console.log(whattosay + ' ' + name);
+    };
+};
