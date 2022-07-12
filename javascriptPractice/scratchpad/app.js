@@ -17,3 +17,6 @@ var greetSpanish = makeGreeting('es');
 // Though these two functions lexically sit in the same make greeting. they
 // are going to point at two very different spots in memory because they were
 // created during different execution context.
+
+greetEnglish('John', 'Doe');
+greetSpanish('John', 'Doe'); // Here I have created a function  factories.
