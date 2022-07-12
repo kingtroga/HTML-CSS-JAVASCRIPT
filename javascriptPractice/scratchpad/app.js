@@ -4,3 +4,9 @@ function greet(name) {
 };
 greet();
 
+
+// Funtion expression
+var greetFunc = function(name) {
+    console.log('Hello ' + name);
+};
+greetFunc();
