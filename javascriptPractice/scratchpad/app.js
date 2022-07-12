@@ -1,40 +1,22 @@
-function sayHiLater() {
+var person = {
+    firstname: 'John',
+    lastname: 'Doe',
+    getFullName: function() {
 
-    var greeting = 'Hi!';
+        var fullname = this.firstname + " " + this.lastname;
+        return fullname;
+    }
+}
 
-    setTimeout( function() { //CALLBACKS, FIRST CLASS FUNCTION, CLOSURE,
-                             // Anonymous functions, Function expressions
+var logName = function(lang1, lang2) {
 
-        console.log(greeting);
-    }, 3000);
+    console.log('Logged: ' + this.getFullName());
 
 }
 
-sayHiLater();
+// the bind function returns a new function. It set's up a copy of the 
+// function so that whenever it run.  The JavaScript engine decides that 
+// the this variable was whatever was passed to the this variable.
+var logPersonName = logName.bind(person);
 
-// jQuery uses function expressions and first-class functions!
-/* $('button').click(function () {
-
-}); */
-
-function tellMeWhenDone(callback) {
-    
-    var a = 1000; // some work
-    var b = 2000; // some work
-    console.log(a, b)
-    callback(); // the 'callback', it runs the function I give it.
-
-    
-}
-
-tellMeWhenDone(function(){
-
-    console.log('I am done!');
-
-})
-
-tellMeWhenDone(function(){
-
-    console.log('I am done!');
-
-})
+logPersonName();
