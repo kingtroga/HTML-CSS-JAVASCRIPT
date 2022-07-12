@@ -10,5 +10,23 @@ var greetFunc = function(name) {
     console.log('Hello ' + name);
 }(); // output will be the function value.
 
+// what will the output be
+console.log(greetFunc); // this is holding string not a function If we try
+//to invoke it. It would lead to a function.
 
 
+
+3; // valid javaScipt expression. You don't always have to store an operation
+// in a variable
+
+"This is a string";
+
+{
+    name: "I am an object"
+};
+
+
+function(name) {
+    console.log('Hello ' + name);
+}; // The compiler expects this to be a function statement so it wants it
+// to be function statement. 
