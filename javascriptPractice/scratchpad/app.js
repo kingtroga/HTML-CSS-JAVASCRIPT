@@ -28,14 +28,14 @@ console.log(greetFunc); // this is holding string not a function If we try
 
 
  
-// How we can trick the compiler to think that the following code is a
-// a function statement.
-// The most accepted way is to put parenthesis infront of  like so
-// Note: this is when you want a function expression not the a function 
-// statement like you are used to.
-// Note: you never put a statement in a parenthesis. It's always an expression
-// and since javaScript knows that the code below won't produce errors.
+
+var firstname = 'John';
+
 
 (function(name) {
-    console.log('Hello ' + name);
-}); 
+
+    var greeting = 'Inside IIFE: Hello';
+    console.log(greeting + ' ' + name);
+
+}(firstname)); // What is the output of this code
+
