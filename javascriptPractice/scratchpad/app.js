@@ -50,3 +50,14 @@ var person2 = {
 }
 
 console.log(person.getFullName.apply(person2))
+
+// function currying
+function multiply(a, b) {
+    return a*b;
+}
+
+var multiplyByTwo = multiply.bind(this, 2); // giving it parameters gives
+// it permanent values of the function when the copy is made...
+// the first parameter will always be a 2.
+// so whatevery you pass will be the second parameter
+console.log(multiplyByTwo(5));
