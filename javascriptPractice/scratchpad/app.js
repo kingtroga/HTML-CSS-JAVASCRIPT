@@ -11,5 +11,5 @@ var greetFunc = function(name) {
 };
 
 
-// OUTPUT will be the function value
-console.log(greeting());
+// OUTPUT will be  a better function  value
+console.log(greeting('John'));
