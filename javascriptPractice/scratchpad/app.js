@@ -23,3 +23,9 @@ var logPersonName = logName.bind(person);
 logPersonName('en');
 
 
+logName.call(person) // Kind works like bind but unlike it. 
+// call doesn't create
+// a copy of the function it actually executes it. Then decide 
+// what the 'this' variable would be.
+
+logName.apply(person, ['en', 'es']); // kinda like call but it wants an array of parameters.
