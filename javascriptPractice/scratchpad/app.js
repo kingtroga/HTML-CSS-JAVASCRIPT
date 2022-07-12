@@ -37,5 +37,5 @@ var firstname = 'John';
     var greeting = 'Inside IIFE: Hello';
     console.log(greeting + ' ' + name);
 
-}(firstname)); // What is the output of this code
+}(firstname)); // This is a classic example of an IIFE.
 
