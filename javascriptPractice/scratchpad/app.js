@@ -38,3 +38,15 @@ logName.apply(person, ['en', 'es']); // kinda like call but it wants an array of
     console.log("-----------");
 
 }).apply(person, ['es', 'en']);
+
+
+
+
+
+// function borrowing 
+var person2 = {
+    firstname: 'Jane',
+    lastname:'Doe'
+}
+
+console.log(person.getFullName.apply(person2))
