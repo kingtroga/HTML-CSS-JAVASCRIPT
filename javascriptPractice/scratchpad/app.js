@@ -16,6 +16,13 @@ john.__proto__ = person;
 
 // the for loop reach out and got every property that's not just
 // on the object but on the propototype itself.
-for (var prop in john) {// we can loop against a collection 
-    console.log(prop + ': ' + john[prop]);
+
+// what if I didn't want the object to reach out.
+// then.
+for (var prop in john) {
+    
+    if (john.hasOwnProperty(prop)) {
+        console.log(prop + ': ' + john[prop]);
+    }
+    
 }
