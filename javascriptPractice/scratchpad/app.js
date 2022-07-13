@@ -1,29 +1,23 @@
-// POLYFILL>
+var a = 3;
+console.log(typeof a);
 
-if (!Object.create) {
-    Object.create = function (o) {
-        if (arguments.length > 1) {
-            throw new Error('Object.create implementation' 
-            + " only accepts the first parameter.");
-        }
-        function F() {
-            F.prototype = o;
-            return new F();
-        };
-    }
+var b = "Hello";
+console.log(typeof b);
+
+var c = {};
+console.log(typeof c);
+
+var d = [];
+console.log(typeof d);  // weird! why the course says why.
+console.log(Object.prototype.toString.call(d)); // better!
+
+function Person(name) {
+    this.name = name;
 }
 
-var person = {
-    firstname: 'Default',
-    lastname: 'Default',
-    greet: function() {
-        return 'Hi ' + this.firstname; // why  the 'this' to prevent the js
-                                       // engine from searching outside the curent
-                                       // object for the firstname property e.g the global object.
-    }
-}
+var e = new Person('Jane');
+console.log(typeof e);
+console.log(e instanceof Person);
 
-var john = Object.create(person);
-john.firstname = 'John';
-john.lastname = 'Doe';
-console.log(john)
+console.log(typeof undefined); // makes sense
+console.log(typeof null); // a bug since like forever
