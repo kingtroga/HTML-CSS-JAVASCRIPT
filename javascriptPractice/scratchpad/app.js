@@ -14,3 +14,4 @@ var john = {
 // don't do this EVER! for demo purposes only!!!
 // all objects have a reference to a prototype object
 john.__proto__ = person;
+console.log(john.getFullName());
