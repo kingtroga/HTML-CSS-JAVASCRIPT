@@ -1,23 +1,16 @@
-function mapForEach(arr, fn) {
-    
-    var newArr = [];
-    for (var i=0; i < arr.length; i++) {
-
-        newArr.push(
-            fn(arr[i])
-        );
-    };
-
-    return newArr;
-    
-
+var person = {
+    firstname: 'Default',
+    lastname: 'Default',
+    getFullName: function() {
+        return this.firstname + ' ' + this.lastname;
+    }
 }
 
-var arr1 = [1, 2, 3]
-console.log(arr1);
+var john = {
+    firstname: 'John',
+    lastname: 'Doe'
+}
 
-var arr2 = mapForEach(arr1, function(item){
-    return item*2;
-});
-
-console.log(arr2);
+// don't do this EVER! for demo purposes only!!!
+// all objects have a reference to a prototype object
+john.__proto__ = person;
