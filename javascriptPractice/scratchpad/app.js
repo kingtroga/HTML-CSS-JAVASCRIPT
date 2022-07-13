@@ -5,6 +5,10 @@ function Person(firstname, lastname) {
 
 }
 
+Person.prototype.getFullName = function () {
+    return this.firstname + ' ' + this.lastname;
+}
+
 var john = new Person('John', 'Doe');
 console.log(john);
 
