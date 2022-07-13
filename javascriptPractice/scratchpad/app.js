@@ -13,3 +13,7 @@ var john = {
 
 // don't do this EVER! for demo purposes only!!!
 john.__proto__ = person;
+
+for (var prop in john) {// we can loop against a collection 
+    console.log(prop + ': ' + john[prop]);
+}
