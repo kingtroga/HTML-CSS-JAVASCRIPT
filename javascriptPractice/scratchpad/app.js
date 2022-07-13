@@ -1,4 +1,6 @@
+"use strict";
+
 var person;
 
-persom = {};
+person = {};
 console.log(persom);
