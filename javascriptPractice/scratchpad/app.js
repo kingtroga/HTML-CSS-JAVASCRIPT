@@ -21,8 +21,27 @@ john.__proto__ = person;
 // then.
 for (var prop in john) {
     
-    if (john.hasOwnProperty(prop)) {
+    if (john.hasOwnProperty(prop)) { // so I can reflect on the John objec
+                                     // reflect on it's properties
+                                     // this features lets use do something
+                                     // even cooler but it's not built into
+                                     // JavaScript. It's in Underscore though
         console.log(prop + ': ' + john[prop]);
     }
-    
+
 }
+
+var jane = {
+    address: '111 Main St.',
+    getFormalFullName: function() {
+        return this.lastname + ', ' + this.firstname;
+    }
+}
+
+var jim =  {
+      getFirstName: function() {
+          return firstname;
+      }
+}
+
+_.extend(john,jane, jim);
