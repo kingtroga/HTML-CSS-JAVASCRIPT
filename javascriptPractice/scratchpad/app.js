@@ -9,4 +9,6 @@ var person = {
 }
 
 var john = Object.create(person);
+john.firstname = 'John';
+john.lastname = 'Doe';
 console.log(john)
