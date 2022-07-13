@@ -44,4 +44,9 @@ var jim =  {
       }
 }
 
-_.extend(john,jane, jim);
+_.extend(john,jane, jim); // this composes or combines these objects
+                          // it takes all the properties and methods of 
+                          // the object parameters and adds it to john 
+                          // for me. This is different from the prototype
+                          // chain this physically actually places the 
+                          // prototype in the john object
