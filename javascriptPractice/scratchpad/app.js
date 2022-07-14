@@ -68,6 +68,15 @@
               }
 
               return this;
+          },
+
+          setLang: function(lang) {
+              
+              this.language = lang;
+
+              this.validate();
+
+              return this;
           }
     };
 
